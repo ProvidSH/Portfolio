@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* defining variables */
+:root { 
+    --font-family:"Montserrat", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color:#aadddd;
+    --primary-color:#000000;
+    --secondary-color:#FFFFFF;
+    --primary-shadow:#8b8eaf;
+    --secondary-shadow:#96d4cc;
+    --bottom-margin:0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 { /* color of nav bar*/
+    color: var(--primary-color);
+}
+
+nav a { /* initiate transition */
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover { /*changes color when hovering */
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul { /* makes nav horizontal */
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li { /* boldens list */
+    font-weight: var(--bond-font);
+    /* padding: 1.5rem 5rem; */
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 75rem;
+    margin: auto;
+}
+
+.about img{
+    padding: 0.625rem;
+}
+.aboutme_description {
+    width: 30rem;
+    padding:1rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 7px 2px var(--primary-shadow);
+}
+
+.aboutme_description h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.aboutme_description p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+
+}
+
