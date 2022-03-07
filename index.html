@@ -1,1 +1,273 @@
-Portfolio
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="Users/elizabethjiang/Desktop/Portfolio/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Elizabeth Jiang</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+
+    <nav>
+      <h1>ELIZABETH JIANG</h1>
+      <ul class="navigation">
+        <li>
+          <a href="#aboutme" class="nav-link">About</a>
+         </li>
+
+        <li>
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+
+        <li>
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+
+        <li><a href="#contactme" class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <img 
+      src="/Users/elizabethjiang/Desktop/Portfolio/images/image1.jpeg"
+      alt="elizabetjiang"
+      loading="pwah"
+      class="aboutme-img">
+      <section class="aboutme_description">
+        <h2 class="aboutme-title">About Me</h2>
+        <p class="aboutme-text">
+          Hello! I'm Elizabeth Jiang, and I'm a freshman studying Computer Science at Indiana University Bloomington.
+          I was born in the States, but I lived in Shanghai for 7 years. I play piano, edit videos, and listen to music.
+        </p> <br>
+        <p>Oh, and I also do competitive typing.</p>
+      </section>
+    </section>
+
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>I was born in Indianapolis, Indiana and grew up in Lawrence & Carmel. My childhood was quite simple: wake up, 
+        go to school, attend clubs, do homework, and go to bed. I would repeat that same cycle at the ICCCI and church 
+        over the weekends.
+      </p>
+      <p>But as the years went by, I grew tired of this repetitive system, so I asked my mom this:</p>
+    </section>
+    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+
+          <img
+            src="https://icon-library.com/images/icon-html5/icon-html5-7.jpg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+        
+        <div class="second-set">
+          <img
+            src="https://w3soft.org/wpub/media-pbld/@langs-short-desc-go/go-logo.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Past Projects</h2>
+      <div class="projects-container">
+        <div class="projects-container project-card">
+          <img
+            src="/Users/elizabethjiang/Desktop/Portfolio/images/ChineseE.png"
+            alt="Chinese Elementary Website"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="chinese-elementary-website"></h3>
+          <div class="project-details" style="text-align:center">
+            <p class="project-description">
+              From simple numbers and phrases to sweet idioms and culture, this website provides a learning experience 
+              for those who are interested in learning Chinese.<br>
+            </p>
+            <a href="https://github.com/ProvidSH/Marr" target="_blank" class="project-link">Click here!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mjvlrppa" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required>
+              </textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://github.com/ProvidSH" target="_blank"
+      ><img
+        src="/Users/elizabethjiang/Desktop/Portfolio/images/Github.png"
+        alt="Github"
+        loading="lazy"
+        class="socicon"
+        /></a>
+
+      <a href="https://www.linkedin.com/in/elizabeth-jiang-122358227/" target="_blank"
+      ><img
+        src="/Users/elizabethjiang/Desktop/Portfolio/images/Linkedin.png"
+        alt="linkedin"
+        loading="lazy"
+        class="socicon"
+        /></a>
+        
+      <a href="https://www.instagram.com/elizabethj2017/" target="_blank"
+      ><img
+        src="/Users/elizabethjiang/Desktop/Portfolio/images/instagram.png"
+        alt="Instagram"
+        loading="lazy"
+        class="socicon"
+        /></a>
+    </div>
+    <!-- Scroll to top -->
+
+    <i class="scroll-up" id="scroll-up"
+      ><img 
+        src="/Users/elizabethjiang/Desktop/Portfolio/images/up.ico"
+        class="socicon up-arrow"
+        alt="scroll-up"
+     /></i>
+    
+     <script>
+       const scrollUp = document.querySelector("#scroll-up");
+
+       scrollUp.addEventListener("click",() => {
+         window.scrollTo({
+           top: 0,
+           left: 0,
+           behavior: "smooth",
+         });
+       });
+    </script>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by Elizabeth Jiang
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
